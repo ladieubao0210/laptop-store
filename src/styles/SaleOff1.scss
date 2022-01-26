@@ -1,0 +1,15 @@
+.sale__banner1{
+   width: 90%;
+   display: flex;
+   justify-content: content;
+   align-items: center;
+   margin: 10px auto;
+   .banner__img1{
+     z-index: 2;
+     display: flex;
+     align-items:center;
+     justify-content: center;
+     text-align: center;
+   }
+}
+

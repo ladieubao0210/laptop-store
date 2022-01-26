@@ -1,0 +1,105 @@
+.product__item {
+  margin: 20px 6px;
+  width: 32%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 0px;
+  .product__img {
+    width: 150px;
+    height: 150px;
+    img {
+      transition: all 0.3s ease;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .product__body {
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    .product__title {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .product__price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .product__oldPrice {
+        color: gray;
+        font-size: 1.1rem;
+        text-decoration: line-through;
+      }
+      .product__newPrice {
+        color: red;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+    }
+    .product__infos {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 8px;
+      .product__info {
+        display: flex;
+        align-items: center;
+        padding: 4px 4px;
+        .product__icon {
+          display: flex;
+          align-items: center;
+          font-size: 1.1em;
+          margin-right: 3px;
+          color: rgb(104, 104, 104);
+        }
+        span {
+          display: flex;
+          align-items: center;
+          color: rgb(104, 104, 104);
+        }
+      }
+    }
+  }
+  .product__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      font-family: "Quicksand", sans-serif;
+      display: flex;
+      width: 274px;
+      height: 50px;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: rgb(255, 26, 26);
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: rgb(255, 62, 62);
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    img {
+      transform: scale(1.05);
+    }
+  }
+}

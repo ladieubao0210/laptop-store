@@ -1,0 +1,88 @@
+.product__page {
+  width: 100%;
+  height: 100%;
+  .product__list-filter {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 40px;
+    font-family: "Quicksand", sans-serif;
+    .product__list-menu {
+      grid-column: 1/2;
+      grid-row: 1/5;
+      .product__list-option {
+        .product__list-title {
+          flex-direction: flex-start;
+          display: flex;
+          font-size: 15px;
+          font-weight: bold;
+        }
+        .product__list-content {
+          padding: 4px 0px;
+          .product__list-item {
+            display: flex;
+            padding: 5px 0px;
+            align-items:center;
+            input[type="checkbox"]{
+              appearance: none;
+              -webkit-appearance: none;
+              width:15px;
+              height:15px;
+              background-color: rgba(0,0,0,0.2);
+              border-radius: 3px;
+              cursor: pointer;
+              transition: all 0.5s ease;
+              &:hover{
+                background-color:rgba(0, 0, 0, 0.1)
+              }
+            }
+            input[type="checkbox"]:after{
+              font-family:'Font Awesome 5 Free';
+              font-weight:900;
+              content: "\f00c";
+              color:white;
+              display:none;
+            }
+            input[type="checkbox"]:checked{
+              background-color:rgb(255,62,62)
+            }
+            input[type="checkbox"]:checked:after{
+              display:block;
+            }
+            label{
+              margin-left:5px;
+              color:#000;
+              transition:all 0.3s ease;
+              &:hover{
+                transform:scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+    .product__list-items {
+      grid-column: 2/5;
+      grid-row: 1/5;
+      .product__list-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        h2 {
+          color: white;
+        }
+      }
+      .product__list-product{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      }
+    }
+  }
+}

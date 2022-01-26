@@ -1,0 +1,113 @@
+.cart__page-container {
+  width: 90%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif;
+  .cart__page-title {
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(230, 230, 230);
+  }
+  .cart__page-items {
+    width: 100%;
+    padding: 20px;
+    .cart__page-item {
+      border-bottom: 1px solid rgb(230, 230, 230);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      .cart__page-img {
+        width: 100px;
+        height: 100px;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .cart__page-name {
+        font-size: 1.2rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 400px;
+        height: auto;
+      }
+      .cart__page-count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 100px;
+        position: relative;
+        span {
+          border: 1px solid rgb(179, 179, 179);
+          width: 60px;    
+          height:40px;
+          font-weight: bold;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .remove {
+          position: absolute;
+          bottom:0;
+          .empty {
+            color: rgb(162, 162, 162);
+            cursor: pointer;
+          }
+        }
+      }
+      .cart__page-price {
+        display: flex;
+        justify-content: flex-end;
+        width: 200px;
+        span {
+          width: auto;
+          font-size: 1.2rem;
+          color: red;
+        }
+      }
+    }
+  }
+  .cart__page-item-bottom {
+    padding: 42.5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .cart__page-price-check {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 280px;
+      span {
+        display: flex;
+        padding: 10px 0px;
+        font-weight: bold;
+      }
+    }
+    .cart__page-price-total {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      right: 60px;
+      flex-direction: flex-end;
+      span {
+        padding: 10px 0px;
+      }
+      span:first-child {
+        font-size: 1rem;
+        color: red;
+        margin-left: 20px;
+      }
+      span:last-child {
+        font-size: 1.2rem;
+        color: red;
+      }
+    }
+  }
+}

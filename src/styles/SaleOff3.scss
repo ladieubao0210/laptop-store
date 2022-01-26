@@ -1,0 +1,24 @@
+.banner{
+    margin-top: 40px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    .banner__content{
+        display: grid;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 200px;
+        grid-gap: 0px 20px;
+        .content-1{
+            width:100%;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .content-2{
+            width:100%;
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+    }
+}

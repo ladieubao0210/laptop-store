@@ -1,0 +1,22 @@
+.sale__banner2 {
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: content;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  .banner__img2 {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .img2 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
